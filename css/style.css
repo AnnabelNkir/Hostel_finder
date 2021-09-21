@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +24,7 @@
     height: 100vh;
     width: 100%;
     font-family: 'poppins';
+
     text-align: center;
     position: relative;
     margin-top: 80px;
