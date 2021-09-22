@@ -199,3 +199,6 @@ p.large-paragraph {
     font-size: large;
     color: green;
 }
+.hide-hide{
+    display: none;
+}
