@@ -1,30 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</head>
-<body>   
-</body>
-      
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hostel finder</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
     <link rel="stylesheet" href="css/tooplate-style.css">   
 </head>
@@ -46,17 +29,12 @@
                         </button>
                         <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="listings.html">Listing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About us Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="listings.html">Listing</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
                                 </li>
                             </ul>
                         </div>
@@ -94,10 +72,10 @@
                                 <div class="form-row tm-search-form-row">
                                     <div class="form-group tm-form-element tm-form-element-2">
                                         <select name="room" class="form-control tm-select" id="room">
-                                            <option value="">Room</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
+                                            <option value="">Hostel type</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3"></option>
                                         </select>
                                         <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
                                     </div>
@@ -154,19 +132,40 @@
         </div>
 
 
-        <footer class="tm-bg-dark-blue">
-            <div class="container">
-                <div class="row">
-                    <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                        Copyright &copy; <span class="tm-current-year">2020</span> Hostel finder Inc</p>
+        <footer class="bg-secondary text-white pt-5 pb-4">
+            <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">QUICK LINKS</h5>
+                  <p><a href="index.html" class="text-white" style="text-decoration: none;">Home</a></p>
+                  <p><a href="listings.html" class="text-white" style="text-decoration: none;">Listings</a></p>
+                  <p><a href="about.html" class="text-white" style="text-decoration: none;">About us</a></p>
+                  <p><a href="contact.html" class="text-white" style="text-decoration: none;">Contact</a></p>
                 </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CONTACTS</h5>
+                  <p><i class="fas fa-home mr-3"></i>Nairobi, NB 011, KE</p>
+                  <p><i class="fas fa-envelope mr-3"></i>hostelfinder@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i>+254 721000021</p>
+                  <p><i class="fas fa-print mr-3"></i>+254 711223344</p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SOCIAL MEDIA</h5>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" height="40px" width="40px"></p>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" height="40px" width="40px"></p>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" height="40px" width="40px"></p>
+                  <a href="#"><i class="fa fa-twitter"></i>
+                  <a href="#"><i class="fa fa-instagram"></i>
+                  <a href="#"><i class="fa fa-gmail"></i>
+                </div>
+              </div>
             </div>
-        </footer>
+      
+          </footer>
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/datepicker.min.js"></script>
 </body>
-
 
 </html>
