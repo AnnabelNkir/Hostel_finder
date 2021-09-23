@@ -14,6 +14,35 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="#">
+                            <img src="img/logo.png" alt="Site logo">
+                            Hostel Finder
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="listings.html">Listing</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     <section id="properties">
         <div class="container">
             <h1><strong>LISTINGS</strong></h1>
@@ -27,10 +56,10 @@
                 <div>
                     <img src="assets/48357989.jpg" alt="Property 1" />
                     <div class="property-details">
-                        <p class="price"><  <a href=""></a> Kshs. 27,500</p>
+                        <p class="price"></a> Kshs. 27,500</p>
                         <span class="beds">2 bed room</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work3" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work3" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hidecheck">
                         <span class="amenities">amenities 
                             Homely Made Breakfast And Dinner
@@ -72,7 +101,7 @@
                         <p class="price">Kshs. 13,000</p>
                         <span class="beds">1 beds</span>
                         <span class="baths">1 baths</span>
-                        <button type="button" id="work4" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work4" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hidein">
                             <span class="amenities">amenities 
                                 Fast Broadband Internet Free
@@ -112,7 +141,7 @@
                         <p class="price">Kshs. 11,000</p>
                         <span class="beds">1 bed</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work7" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work7" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hidet">
                         <span class="amenities">amenities 
                             WI-FI 
@@ -151,7 +180,7 @@
                         <p class="price">Kshs. 15,000</p>
                         <span class="beds">1 bedroom</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work6" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work6" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hidefade">
                         <span class="amenities">amenities 
                             WI-FI 
@@ -190,7 +219,7 @@
                         <p class="price">Kshs. 11,000</p>
                         <span class="beds">1 bed</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work5" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work5" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hidemap">
                         <span class="amenities">amenities 
                             WI-FI 
@@ -230,7 +259,7 @@
                         <p class="price">Kshs. 13,000</p>
                         <span class="beds">1 bed</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work2" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work2" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hideout">
                         <span class="amenities">amenities 
                             Spacious Well Appointed Rooms Free
@@ -268,7 +297,7 @@
                         <p class="price">Kshs. 9,500</p>
                         <span class="beds">1 bed</span>
                         <span class="baths">1 bath</span>
-                        <button type="button" id="work1" class="btn btn-primary">BOOK NOW</button>
+                        <button type="button" id="work1" class="btn btn-primary">Hostel features</button>
                         <div class="hide-hide">
                         <span class="amenities">amenities 
                             Spacious Well Appointed Rooms Free
@@ -302,21 +331,36 @@
             </div>
         </div>
     </section>
-    <section class="bg-dark text-light p-5">
-        <div class="container">
-            <div class="d-md flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">SIgn up for our newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" 
-                   placeholder="first name">
-                   <input type="text" class="form-control" 
-                   placeholder="Enter Email">
-                   <button class="btn btn bg-success btn-lg" 
-                   type="button">Submit</button>
-                 </div>
+    <footer class="bg-secondary text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">QUICK LINKS</h5>
+              <p><a href="index.html" class="text-white" style="text-decoration: none;">Home</a></p>
+              <p><a href="listings.html" class="text-white" style="text-decoration: none;">Listings</a></p>
+              <p><a href="about.html" class="text-white" style="text-decoration: none;">About us</a></p>
+              <p><a href="contact.html" class="text-white" style="text-decoration: none;">Contact</a></p>
             </div>
-       
-     </section>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CONTACTS</h5>
+              <p><i class="fas fa-home mr-3"></i>Nairobi, NB 011, KE</p>
+              <p><i class="fas fa-envelope mr-3"></i>hostelfinder@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i>+254 721000021</p>
+              <p><i class="fas fa-print mr-3"></i>+254 711223344</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SOCIAL MEDIA</h5>
+              <p><img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" height="40px" width="40px"></p>
+              <p><img src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" height="40px" width="40px"></p>
+              <p><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" height="40px" width="40px"></p>
+              <a href="#"><i class="fa fa-twitter"></i>
+              <a href="#"><i class="fa fa-instagram"></i>
+              <a href="#"><i class="fa fa-gmail"></i>
+            </div>
+          </div>
+        </div>
+  
+      </footer>
     </div>
     <script>
         $(function () {
@@ -402,5 +446,6 @@ $(document).ready(function(){
 });
 alert (email+ ",We have received your message. Thanks for your honest feedback.:)");
     </script> 
+
 </body>
 </html>
