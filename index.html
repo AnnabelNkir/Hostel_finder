@@ -1,43 +1,171 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hostel finder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css">   
 </head>
+
 <body>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="#">
+                            <img src="img/logo.png" alt="Site logo">
+                            Hostel Finder
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="listings.html">Listing</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tm-section tm-bg-img" id="tm-section-1">
+            <div class="tm-bg-white ie-container-width-fix-2">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">
+                                    <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
 
-    <div class="lis-tings">
-    <h1><strong>listings</h1></strong></h1>
-    <h2>Featured hostels</h2>
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                        <select name="room" class="form-control tm-select" id="room">
+                                            <option value="">Locations</option>
+                                            <option value="1">Nairobi</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn"
+                                            placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut"
+                                            placeholder="Check Out">
+                                    </div>
+                                </div>
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                        <select name="room" class="form-control tm-select" id="room">
+                                            <option value="">Hostel type</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3"></option>
+                                        </select>
+                                        <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                    </div>
+                                </div>
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                        <select name="room" class="form-control tm-select" id="room">
+                                            <option value="">Filter prices</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                        <button type="submit" class="btn btn-primary tm-btn-search">Check
+                                            Availability</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tm-section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="tm-section-title">Get hostels at affordable prices</h2>
+                        <p class="tm-color-white tm-section-subtitle">xlick here to view hostels</p>
+                        <a href="#" class="tm-color-white tm-btn-white-bordered">Listing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-section tm-position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+                class="tm-section-down-arrow">
+                <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>
+            </svg>
+        </div>
+
+
+        <footer class="bg-secondary text-white pt-5 pb-4">
+            <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">QUICK LINKS</h5>
+                  <p><a href="index.html" class="text-white" style="text-decoration: none;">Home</a></p>
+                  <p><a href="listings.html" class="text-white" style="text-decoration: none;">Listings</a></p>
+                  <p><a href="about.html" class="text-white" style="text-decoration: none;">About us</a></p>
+                  <p><a href="contact.html" class="text-white" style="text-decoration: none;">Contact</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CONTACTS</h5>
+                  <p><i class="fas fa-home mr-3"></i>Nairobi, NB 011, KE</p>
+                  <p><i class="fas fa-envelope mr-3"></i>hostelfinder@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i>+254 721000021</p>
+                  <p><i class="fas fa-print mr-3"></i>+254 711223344</p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SOCIAL MEDIA</h5>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png" height="40px" width="40px"></p>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/1409/1409937.png" height="40px" width="40px"></p>
+                  <p><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" height="40px" width="40px"></p>
+                  <a href="#"><i class="fa fa-twitter"></i>
+                  <a href="#"><i class="fa fa-instagram"></i>
+                  <a href="#"><i class="fa fa-gmail"></i>
+                </div>
+              </div>
+            </div>
+      
+          </footer>
     </div>
-    <h6>browse on the folllowing lists of available hostels</h6>
-    <div class="row">
-        <div class="col-md-3" id="work4">
-           <img src="assets/hostal-bohostel-chapultepec-best-hostels-in-mexico.jpg" alt="">
-            <p id="overlay1" class="text">
-                <strong>hangarian hostels</strong></p>
-               <h5>About The Hostel</h5> 
-              Qwetu WilsonView are safe & secure affordable student hostels in Madaraka.<br>
-              Accommodation offering furnished rooms to select from with Beds,<br>
-             Free Wifi, 24/7 Security, Constant Water Supply. Home to students from UON,<br>
-             Riara University, Strathmore University Daystar University, CUEA, ADMI, University<br>
-             <div class="house rules">
-                 <h3>house rules</h3>
-                 <ol>
-                     <li>Any Act Of Culminate In Breach Of Peace And Order, Damage Of Property Are Prohibited</li>
-                     <li>Possession, Distribution And/Or Consumption Of Alcoholic Beverages, Prohibited Drugs, Any Form Of Narcotics, , Gambling.</li>
-                     <li>All Hostels Residents Are Expected To Respect One Another And Maintain Good Neighbourliness</li>
-                     <li>all hostels owners will be provided witha door lock key which must be tkaen care of by every individual</li>
-                     <li></li>
-                 </ol>
-             </div>
-
-    
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
 </body>
+
 </html>

@@ -1,23 +1,55 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbarbrand{
+  margin-bottom: -10%;
+  background-color: none;
+  color: black;
+  font-weight: bold;
+  margin: unset;
+  margin-top: -5px;
+  margin-left: -5px;
+  padding-right: -100px;
+}
+.showcase-text {
+  color: white;
+  font-size: 35px;
+  margin-top: -20%;
+  text-shadow: 2px 2px black;
+}
+.showcase-subtext {
+  color: red;
+  font-size: 28px;
+  text-shadow: 2px 2px black;
+}
+.carousel-indicators {
+  position: absolute;
+  top: -75%;
+}
+.nav-item {
+  padding-left: 5%;
+  display: flex;
+  text-align: right;
+  margin-left: 60px;
+  font-weight: bolder;
+
+ 
+}
+.nav-item:hover{
+    color: white;
+    background: red;
+
+}
+.navbar {
+  margin-left: -1%;
+  
+}
+.navlogo{
+color: black;
 }
 
-.navbar{
-    padding-top: 20px !important;
-}
-.nav-item{
-    margin-left: 40px;
-    margin-bottom: 10px;
-    margin-right: 50px;
-}
-.nav-link{
-    color: black !important;
-    font-size: 15px;
-    padding: 0 0 5px 0;
-    display: unset;
-
-}
 .about{
     height: 100vh;
     width: 100%;
@@ -86,15 +118,60 @@ body{
     font-size: 15px;
 }
 .carousel{
-    width: 640px;
-    height: 360px;
     align-items: center;
-    margin-bottom: 70px;
-    padding-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
+   
 }
 .carousel-item{
-    width: 1000px;
-    height: 750px;
+    width: 400px;
+    height: 900px;
+
 }
+.amenities-box{
+ padding: 0 35px;   
+ cursor: pointer;
+ margin-bottom: 10px;
+}
+.amenities-box img{
+    width: 60px;
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+.amenities-box h6{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.amenities-box p{
+    font-size: 14px;
+    color: #808080;
+    transition: .4s;
+}
+.amenities-box:hover, .active-service{
+    background: red;
+    border-radius: 5px;
+    color: #fff !important;
+    box-shadow: 0 15px 15px 2px rgba(red, 0.5);
+    transition: 4s;
+}
+.amenities-box:hover p{
+    color: #fff !important;
+}
+.active-service p{
+color: #fff;
+}
+.reviews{
+  padding-top: 10%;
+  margin: 5%;
+  padding-bottom: 10%;
+  }
+  .student{
+    border-radius: 50%;
+  }
+  .creview{
+    color: black;
+  }
+  .review-text {
+    padding-left: 10%;
+  }
+  
