@@ -1,6 +1,6 @@
 # Hostel_finder
 A web application that helps students to find places of accomodation, it has details about hostels in Nairobi, their  prices.
-#### by Felixmaina
+#### by Felixmaina Felix Maina, Annabel Michemi, Ferdinand Kiplangat, Mary Manjanja, Samuel Kuria
 
 ## setup installations
 no additional scripts are required to run this website
