@@ -1,4 +1,4 @@
-# Hostel Finder
+# Hostel_finder
 A web application that helps students to find places of residence as they study. 
 
 #### By **{Annabel Micheni, Amos Kimutai, Ferdinand Kiplangat, Felix Maina, Mary Majanja and Samuel Kuria}** **{September 23, 2021}**
